@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Compose Modularize"
-include ':app'
+include(":app")
