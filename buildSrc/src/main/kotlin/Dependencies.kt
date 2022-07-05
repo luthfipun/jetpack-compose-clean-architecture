@@ -12,8 +12,12 @@ object Androidx {
     val compose by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
     val composeMaterial by lazy { "androidx.compose.material:material:${Versions.compose}" }
     val composePreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}" }
+    val viewModelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleRuntime}" }
     val lifecycleRuntime by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntime}" }
     val composeActivity by lazy { "androidx.activity:activity-compose:${Versions.composeActivity}" }
+    val composePaging by lazy { "androidx.paging:paging-compose:${Versions.composePaging}" }
+    val pagingCommon by lazy { "androidx.paging:paging-common:${Versions.pagingCommon}" }
+    val pagingRuntime by lazy { "androidx.paging:paging-runtime-ktx:${Versions.pagingCommon}" }
 }
 
 object Google {

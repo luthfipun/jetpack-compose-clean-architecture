@@ -1,5 +1,6 @@
 object Versions {
-    const val compose = "1.1.0-beta01"
+    const val compose = "1.1.1"
+    const val composeCompiler = "1.2.0"
     const val hiltPlugin = "2.42"
     const val jUnit = "4.13.2"
     const val jUnitExt = "1.1.3"
@@ -13,6 +14,8 @@ object Versions {
     const val jvmInject = "1"
     const val multiDex = "1.0.0"
     const val room = "2.4.2"
-    const val lifecycleRuntime = "2.3.1"
+    const val lifecycleRuntime = "2.4.1"
     const val composeActivity = "1.3.1"
+    const val composePaging = "1.0.0-alpha15"
+    const val pagingCommon = "3.1.1"
 }

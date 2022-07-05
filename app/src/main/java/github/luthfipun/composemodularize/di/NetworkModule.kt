@@ -5,6 +5,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import github.luthfipun.composemodularize.BuildConfig
+import github.luthfipun.data.remote.RemoteService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -18,9 +19,9 @@ object NetworkModule {
     @Provides
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor {
         return HttpLoggingInterceptor().apply {
-            if (BuildConfig.DEBUG){
-                level = HttpLoggingInterceptor.Level.BODY
-            }
+            level = if (BuildConfig.DEBUG){
+                 HttpLoggingInterceptor.Level.BODY
+            }else HttpLoggingInterceptor.Level.NONE
         }
     }
 
@@ -42,5 +43,11 @@ object NetworkModule {
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideRemoteService(retrofit: Retrofit): RemoteService {
+        return retrofit.create(RemoteService::class.java)
     }
 }

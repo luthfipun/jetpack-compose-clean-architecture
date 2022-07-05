@@ -80,7 +80,7 @@ android {
         }
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Versions.compose
+        kotlinCompilerExtensionVersion = Versions.composeCompiler
     }
     packagingOptions {
         resources {
@@ -90,6 +90,9 @@ android {
 }
 
 dependencies {
+    // Library Module
+    implementation(project(":data"))
+    implementation(project(":domain"))
 
     // Jetpack/Androidx
     implementation(Androidx.coreKtx)
@@ -98,10 +101,13 @@ dependencies {
     implementation(Androidx.composePreview)
     implementation(Androidx.composeActivity)
     implementation(Androidx.lifecycleRuntime)
+    implementation(Androidx.viewModelCompose)
     kapt(Androidx.hiltCompiler)
     implementation(Androidx.room)
     kapt(Androidx.roomCompiler)
     implementation(Androidx.roomKtx)
+    implementation(Androidx.composePaging)
+    api(Androidx.pagingRuntime)
 
     // Google
     implementation(Google.hilt)
