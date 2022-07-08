@@ -1,9 +1,9 @@
-package github.luthfipun.data.remote.fact
+package github.luthfipun.data.repository.fact
 
 import androidx.paging.PagingData
 import github.luthfipun.domain.entity.Fact
 import kotlinx.coroutines.flow.Flow
 
 interface FactRepository {
-    suspend fun getFacts(): Flow<PagingData<Fact>>
+    fun getFact(): Flow<PagingData<Fact>>
 }

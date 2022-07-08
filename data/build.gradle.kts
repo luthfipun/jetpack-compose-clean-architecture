@@ -46,6 +46,7 @@ dependencies {
     implementation(Androidx.room)
     kapt(Androidx.roomCompiler)
     implementation(Androidx.roomKtx)
+    implementation(Androidx.roomPaging)
 
     // Google
     implementation(Google.hilt)

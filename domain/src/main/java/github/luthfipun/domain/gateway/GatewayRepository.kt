@@ -5,5 +5,5 @@ import github.luthfipun.domain.entity.Fact
 import kotlinx.coroutines.flow.Flow
 
 interface GatewayRepository {
-    suspend fun getFact(): Flow<PagingData<Fact>>
+    fun getFacts(): Flow<PagingData<Fact>>
 }

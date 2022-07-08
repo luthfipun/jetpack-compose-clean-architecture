@@ -9,6 +9,7 @@ object Androidx {
     val room by lazy { "androidx.room:room-runtime:${Versions.room}" }
     val roomCompiler by lazy { "androidx.room:room-compiler:${Versions.room}" }
     val roomKtx by lazy { "androidx.room:room-ktx:${Versions.room}" }
+    val roomPaging by lazy { "androidx.room:room-paging:${Versions.room}" }
     val compose by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
     val composeMaterial by lazy { "androidx.compose.material:material:${Versions.compose}" }
     val composePreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}" }

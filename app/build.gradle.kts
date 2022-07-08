@@ -106,6 +106,7 @@ dependencies {
     implementation(Androidx.room)
     kapt(Androidx.roomCompiler)
     implementation(Androidx.roomKtx)
+    implementation(Androidx.roomPaging)
     implementation(Androidx.composePaging)
     api(Androidx.pagingRuntime)
 

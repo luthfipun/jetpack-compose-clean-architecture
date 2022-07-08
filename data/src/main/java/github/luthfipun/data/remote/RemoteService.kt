@@ -1,6 +1,6 @@
 package github.luthfipun.data.remote
 
-import github.luthfipun.data.remote.fact.response.FactResponse
+import github.luthfipun.data.remote.response.FactResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

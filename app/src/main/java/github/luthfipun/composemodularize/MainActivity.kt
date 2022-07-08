@@ -45,18 +45,17 @@ fun Tests(mainViewModel: MainViewModel = viewModel()){
     val scaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
 
-    val lazyFactItems = mainViewModel.facts.collectAsLazyPagingItems()
+    val lazyFactItems = mainViewModel.factFlow.collectAsLazyPagingItems()
 
     Scaffold(scaffoldState = scaffoldState) {
         LazyColumn(modifier = Modifier.fillMaxSize()){
             items(lazyFactItems){ item ->
                 Text(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 24.dp, vertical = 8.dp),
-                    text = item?.fact ?: "Unknown",
+                    text = item?.fact.orEmpty(),
                     fontSize = 18.sp,
-                    fontWeight = FontWeight.SemiBold
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.fillMaxWidth()
+                        .padding(horizontal = 24.dp, vertical = 8.dp)
                 )
             }
 

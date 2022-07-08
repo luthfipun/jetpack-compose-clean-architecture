@@ -17,5 +17,5 @@ object Versions {
     const val lifecycleRuntime = "2.4.1"
     const val composeActivity = "1.3.1"
     const val composePaging = "1.0.0-alpha15"
-    const val pagingCommon = "3.1.1"
+    const val pagingCommon = "3.2.0-alpha01"
 }

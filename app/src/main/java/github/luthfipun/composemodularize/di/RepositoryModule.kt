@@ -5,8 +5,8 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import github.luthfipun.data.GatewayRepositoryImpl
-import github.luthfipun.data.remote.fact.FactRepository
-import github.luthfipun.data.remote.fact.FactRepositoryImpl
+import github.luthfipun.data.repository.fact.FactRepository
+import github.luthfipun.data.repository.fact.FactRepositoryImpl
 import github.luthfipun.domain.gateway.GatewayRepository
 import javax.inject.Singleton
 
