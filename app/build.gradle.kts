@@ -93,6 +93,7 @@ dependencies {
     // Library Module
     implementation(project(":data"))
     implementation(project(":domain"))
+    implementation(project(":common"))
 
     // Jetpack/Androidx
     implementation(Androidx.coreKtx)
