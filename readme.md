@@ -1,11 +1,12 @@
 # Jetpack Compose Modularize
-Open project with implemented jetpack compose clean architecture or modularize (mutli module) using network call rest api and offline mode / cached data to local database. This project also use kotlin dsl for gradle dependency management for scalable or larger project apps
+Open project with implemented jetpack compose clean architecture or modularize (multi module) using network call rest api and offline mode auto cached data to local database with paging 3. This project also use kotlin dsl for gradle dependency management for scalable or larger project apps
 
-## Techstack
+## TechStack
 - Jetpack Compose
 - Retrofit
 - Room
 - Dagger Hilt
+- Paging 3
 - Clean Architecture
 
 ## Local Module / Library
