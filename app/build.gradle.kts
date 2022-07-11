@@ -94,6 +94,7 @@ dependencies {
     implementation(project(":data"))
     implementation(project(":domain"))
     implementation(project(":common"))
+    implementation(project(":fact-feature"))
 
     // Jetpack/Androidx
     implementation(Androidx.coreKtx)

@@ -1,4 +1,4 @@
-package github.luthfipun.common
+package github.luthfipun.fact_feature
 
 import org.junit.Test
 
